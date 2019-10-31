@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <title>静态文件</title>
+</head>
+<body>
+    <img src="/static/images/mm.jpg" alt=""><br/>
+    <img src="/abc/images/mm.jpg" alt=""><br/>
+    动态获取static_url,拼接文件路径L<br>
+    <img src="{% static 'images/mm.jpg' %}" alt="">
+
+</body>
+</html>
